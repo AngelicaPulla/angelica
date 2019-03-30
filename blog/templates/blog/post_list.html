@@ -5,6 +5,7 @@
     <body>
         <div>
             <h1><a href="/">Django Girls Blog</a></h1>
+            {{ posts }}
         </div>
 
         <div>
@@ -12,6 +13,7 @@
             <h2><a href="">BUNBURY</a></h2>
             <p>Enrique Ortiz de Landázuri Izarduy (Zaragoza; 11 de agosto de 1967),1​ más conocido como Enrique Bunbury, es un cantante, compositor y músico español. Es reconocido por ser el vocalista de la banda de rock Héroes del Silencio.</p>
             <a href="https://www.youtube.com/watch?v=UP4Z1X_6Peo">link</a>
+            {% for post in posts %} {{ post }}{% endfor %}
         </div>
 
         <div>
